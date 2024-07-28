@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include "calculator.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -44,7 +45,25 @@ private slots:
 
     void on_pushButton_point_clicked();
 
+    void on_pushButton_leftBracket_clicked();
+
+    void on_pushButton_RBracket_clicked();
+
+    void on_pushButton_back_clicked();
+
+    void on_pushButton_equal_clicked();
+
+    void on_pushButton_division_clicked();
+
+    void on_pushButton_mult_clicked();
+
+    void on_pushButton_subd_clicked();
+
+    void on_pushButton_plus_clicked();
+
 private:
     Ui::Widget *ui;
+
+    Calculator m_Cal;
 };
 #endif // WIDGET_H
